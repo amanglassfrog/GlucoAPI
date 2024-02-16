@@ -14,7 +14,6 @@ def recommendations(request):
 
             # Check if diabetic_level is None or empty
             if diabetic_level is None or not diabetic_level.strip():
-                print(diabetic_level)
                 return JsonResponse({'error': 'diabetic_level parameter is missing or empty.'})
 
 
@@ -22,11 +21,18 @@ def recommendations(request):
 
             result = get_recommendations(int(diabetic_level), (70, 201))
             
-            print(request.body)
-
             return JsonResponse(result)
         
         except Exception as e:
             return JsonResponse({'error': str(e)})
+    else:
+        return JsonResponse({'error': 'Invalid request method'})
+    
+
+
+
+def testing(request): 
+    if request.method == 'GET':
+        return JsonResponse({'success':'hello world'})
     else:
         return JsonResponse({'error': 'Invalid request method'})

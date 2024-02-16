@@ -23,6 +23,8 @@ from recommendations import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('recommendation', views.recommendations)
+    path('recommendation', views.recommendations),
+
+    path('', views.testing)
     
 ]
