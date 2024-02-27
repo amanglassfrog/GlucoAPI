@@ -150,10 +150,3 @@ xdg==5
 xkit==0.0.0
 yarl==1.9.4
 zipp==1.0.0
-
-
-cd ml_service
-
-python3 manage.py migrate
-
-python3 manage.py runserver 
