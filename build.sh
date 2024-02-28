@@ -1,6 +1,6 @@
 pip install -r requirements.txt
 
-pip install --upgrade tensorflow tensorflow-gpu tensorflow-tensorrt
+pip install tensorrt
 
 cd ml_service
 
