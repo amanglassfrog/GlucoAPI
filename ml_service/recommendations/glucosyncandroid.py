@@ -8,15 +8,23 @@ Original file is located at
 """
 
 import pandas as pd
+import os
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 import tensorflow as tf
+from pathlib import Path
+from ml_service.settings import BASE_DIR
 #from tensorflow import lite
 #import joblib
 
+file_path = os.path.join(BASE_DIR.parent, 'data_input.csv')
 
 # Load data_input.csv file
-df = pd.read_csv('/home/gaddar/GlucoSyncMl/data_input.csv')
+df = pd.read_csv(file_path)
+
+
+print(file_path)
+
 
 
 def train_decision_tree(diabetic_level_range):
