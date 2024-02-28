@@ -12,6 +12,7 @@ import os
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 import tensorflow as tf
+import tensorrt
 from pathlib import Path
 from ml_service.settings import BASE_DIR
 #from tensorflow import lite
