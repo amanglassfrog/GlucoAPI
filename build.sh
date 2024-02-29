@@ -1,6 +1,6 @@
 pip install -r requirements.txt
 
-pip install tensorrt
+#pip install tensorrt
 
 cd ml_service
 
