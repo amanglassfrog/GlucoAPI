@@ -1,14 +1,14 @@
-Django==5.0.2
-pandas==2.2.0
-scikit-learn==1.4.0
-#scikit-learn==0.24.2
+Django
+pandas
+scikit-learn
+#scikit-learn
 tensorflow
 
 
 tensorrt
 
-gunicorn==20.1.0
-numpy==1.26.4
+gunicorn
+numpy
 
 tensorboard==2.15.2
 tensorboard-data-server==0.7.2
