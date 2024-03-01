@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /app/ml_service  # Change to the directory containing manage.py
+  # Change to the directory containing manage.py
 
 # Install dependencies
 pip install -r requirements.txt
