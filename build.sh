@@ -1,13 +1,12 @@
+#!/bin/bash
 
+cd /workspace/  # Change to the directory containing manage.py
+
+# Install dependencies
 pip install -r requirements.txt
 
-# pip install tensorrt
-# #!pip install tensorflow-gpu==2.8.0
-# pip install nvidia-pyindex
-# pip install nvidia-tensorrt
-
-# cd ml_service
-
+# Run migrations
 python3 manage.py migrate
 
+# Start the development server
 python3 manage.py runserver
