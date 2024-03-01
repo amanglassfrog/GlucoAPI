@@ -9,3 +9,4 @@ tensorboard
 tensorboard-data-server
 tensorflow-estimator
 tensorrt_bindings==8.6.1
+tensorflow-estimator==2.15.0
