@@ -4,5 +4,5 @@ numpy==1.26.4
 tensorboard==2.15.2
 tensorboard-data-server==0.7.2
 tensorflow-estimator==2.15.0
-tensorrt==9.0.0
-tensorrt_libs==9.0.0
+tensorrt
+tensorrt_libs
