@@ -8,3 +8,4 @@ numpy
 tensorboard
 tensorboard-data-server
 tensorflow-estimator
+tensorrt_bindings==8.6.1
