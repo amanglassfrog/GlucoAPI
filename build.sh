@@ -1,3 +1,4 @@
+--use-pep517 
 pip install -r requirements.txt
 
 pip install tensorrt
